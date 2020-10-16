@@ -1,0 +1,38 @@
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    border: solid;
+    height: 100%;
+    width: 60%;
+    margin: auto;
+}
+.row{
+    padding: 10px;
+    border: solid;
+    font-size: medium;
+    /* text-align: center; */
+}
+
+.row input{
+    
+    float: left;
+    text-align: left;
+   
+    
+}
+.row label{
+    text-align: left;
+   float: left;
+   /* position: relative; */
+  
+}
+/* 
+.row textarea{
+    text-align: left;
+   float: left;
+
+} */
+
+ .row .l{
+ position: absolute;
+}

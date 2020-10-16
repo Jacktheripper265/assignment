@@ -1,0 +1,23 @@
+#tab{
+    border: solid;
+    padding: 10px;
+
+}
+th{
+    background-color: gray;
+    border: solid;
+    padding: 5px;
+}
+tr{
+    padding: 5px;
+    border: solid;
+}
+
+td{
+    padding: 5px;
+    border: solid;
+
+}
+tr:nth-child(2n){
+    background-color: greenyellow;
+}

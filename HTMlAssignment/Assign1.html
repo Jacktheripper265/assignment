@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="Stylesheet" href="assign1.css">
+        <script src="assign1.js"></script>
+    </head>
+    <body>
+        <h2 style="text-align: center; border-style: dotted; padding: 20px;" >Registeration Form</h2>
+        <form action=" " style="margin-top: 20px ; border-style: double;padding: 10px;">
+            <h3 style="text-align: center; color: black;">Personal Details</h3>
+            Enter your name: <input type="text" class="q" required placeholder="Enter your name"><br><br><br>
+            Enter your email: <input type="email" class="q" required placeholder="Enter your email"><br><br><br>
+            Enter your Phone no:<input type="tel" class="q" required placeholder="Enter your Phone no" pattern="[0-9]{10}"><br><br><br>
+            Enter your address: <input type="text" class="q" required placeholder="Enter your address"><br><br><br>
+            <h3 style="text-align: center; color: black;">Payment Details</h3>
+            Enter your full name on card: <input type="text" class="q" required ><br><br><br>
+            Enter your card no: <input type="text" class="q" required placeholder="Enter your card no"  pattern="^[0-9]{12}" width="20px"><br><br><br>
+            Discount:<input type="text" class="q" readonly placeholder="30%"><br><br><br>
+            <h3 style="text-align: center; color: black;">Login Details</h3>
+            Enter username:<input type="text" class="q" required  minlength="6"placeholder="Enter your username" pattern="^[a-z]+[a-z]" ><br><br><br>
+            Enter your password:<input type="password" id="ps" class="q" required  minlength="8" placeholder="Enter your password" ><br><br><br>
+            Confirm password:<input type="password" id="cps" class="q" required  minlength="8" placeholder="Confirm password" onblur="check();"><br><br><br>
+            <input type="submit" value="Register" class="q" id="bu" disabled>
+
+        </form>
+    </body>
+</html>

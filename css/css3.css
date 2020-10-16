@@ -1,0 +1,45 @@
+.d1:hover .d3{
+    display: block;
+}
+
+li{
+    float: left;
+    list-style-type: none;
+  
+}
+
+ul li a{
+    text-decoration: none;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    background-color: greenyellow;
+}
+
+li a .d2{
+    display: inline-block;
+    background-color: grey;
+    color: hotpink;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.d3 {
+    display: none;
+    position: absolute;
+    background-color: red; 
+     min-width: 160px; 
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+  }
+
+  .d3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }

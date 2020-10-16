@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css4.css">
+        <script type="text/javascript">
+            function checkDOB() {
+                var dateString = document.getElementById('dat').value;
+                var myDate = new Date(dateString);
+                var today = new Date();
+                if ( myDate > today ) { 
+                    document.getElementById('out').innerHTML="not valid date";
+                    document.getElementById('sub').disabled="true";
+                    return false;
+                }
+                document.getElementById('sub').disabled="false";
+                document.getElementById('out').innerHTML="";
+                document.getElementById('sub').removeAttribute("disabled");
+                return true;
+            }
+        </script>
+        <script src="css4.js"></script>
+    </head>
+    <body>
+        <form action="success.html">
+        <div class="grid">
+            
+            <div class="row">Employee Id: </div>
+            <div class="row"><input type="number" required autofocus max="15000" min="10001"></div>
+            <div class="row">First Name</div>
+            <div class="row"><input type="text"required minlength="3" maxlength="15" pattern="[A-Za-z]{3,15}"></div>
+            <div class="row">Last Name</div>
+            <div class="row"><input type="text"required  minlength="5" maxlength="25" pattern="[A-Za-z]{5,25}"></div>
+            <div class="row">Department</div>
+            <div class="row" > 
+                <input type="radio" id="it" name="dept" value="it"onchange="chanc();">
+                <label for="IT">IT</label><br>
+                <input type="radio" id="hr" name="dept" value="hr" onchange="chanc();">
+                <label for="HR">HR</label><br>
+                <input type="radio" id="fi" name="dept" value="fi" onchange="chanc();">
+                <label for="Fi">Finance</label><br>
+                <input type="radio" id="ad" name="dept" value="ad" onchange="chanc();">
+                <label for="ad">Admin</label><br></div>
+            <div class="row">Date of joining</div>
+            <div class="row">
+                <input type="date"required id="dat" onchange="checkDOB()">
+                <span id="out"></span>
+            </div>
+            <div class="row">
+                Email:
+            </div>
+            <div class="row"><input type="email"required></div>
+            <div class="row">
+                Contact:
+            </div>
+            <div class="row"><input type="tel"required maxlength="10" pattern="[0-9]{10}" ></div>
+            <div class="row">Address:</div>
+            <div class="row"><textarea required></textarea></div>
+            <div class="row">Training programs to be attended</div>
+            <div class="row" onchange="chan()";>
+                <input type="checkbox" id="w" name="tr" value="w" class="l"onchange="chan()">
+                <label for="w">Web Basis</label><br>
+                <input type="checkbox" id="c" name="tr" value="c" class="l"onchange="chan()">
+                <label for="c"> C#</label><br>
+                <input type="checkbox" id="e" name="tr" value="e"class="l"onchange="chan()">
+                <label for="e">Entry Framework</label><br>
+                <input type="checkbox" id="a" name="tr" value="a"class="l"onchange="chan()">
+                <label for="a"> Asp .net MVC</label><br>
+            </div>
+            <div class="row"></div>
+            <div class="row">
+                <input type="submit" value="Register" id="sub" onclick="checkc();checkr()">
+                <input type="button" value="Cancel">
+            </div>
+            
+        </div>
+    </form>
+    </body>
+</html>

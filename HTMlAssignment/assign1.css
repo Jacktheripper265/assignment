@@ -1,0 +1,15 @@
+.q{
+    margin:auto;
+    display: inline-block;
+    position: relative;
+   
+  
+}
+form{
+    text-align: center;
+    margin: 10px;
+ 
+}
+body{
+    background-color: lawngreen;
+}
